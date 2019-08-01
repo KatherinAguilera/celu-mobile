@@ -115,6 +115,10 @@
   /**MediaQueries**/
   @media screen and (max-width: 768px)
   {
+    body{
+      overflow-y:visible;
+      overflow-x:hidden;
+    }
     .Container{
       background: linear-gradient(45deg, #A64A81 0%, #5BD9D6 50%);
       height: 100vh;
@@ -143,7 +147,14 @@
     }
   }
   @media screen and (max-width: 320px){
+    body{
+      overflow-y:visible;
+      overflow-x:hidden;
+    }
     .Container{
       padding: 40px 15px;
+    }
+    .Container-image {
+      margin-top: 10px;
     }
   }
