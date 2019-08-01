@@ -1,0 +1,55 @@
+%!Adobe-FontList 1.19
+%Locale:0x580a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Gilroy-ExtraBold
+FamilyName:Gilroy
+StyleName:ExtraBold
+FullName:Gilroy ExtraBold
+MenuName:Gilroy ExtraBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Prueba Desarrollador Front end\Font\Gilroy\Gilroy-ExtraBold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:54956
+FileModTime:1468480756
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Gilroy ExtraBold
+NameArray:0,Win,1,Gilroy ExtraBold
+NameArray:0,Win,16,Gilroy
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Gilroy-Light
+FamilyName:Gilroy
+StyleName:Light
+FullName:Gilroy Light
+MenuName:Gilroy Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Prueba Desarrollador Front end\Font\Gilroy\Gilroy-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:54704
+FileModTime:1468480750
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Gilroy Light
+NameArray:0,Win,1,Gilroy Light
+NameArray:0,Win,16,Gilroy
+%EndFont
+

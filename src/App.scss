@@ -1,0 +1,149 @@
+%propiedad {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: .5px solid rgba(148, 233, 149, 1);
+  outline:0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+.Container{
+  background: linear-gradient(45deg, #A64A81 0%, #5BD9D6 50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+/**Mobile**/
+
+.Mobile {
+  height: 85vmin;
+}
+
+/**Formulario**/
+.Form{
+  z-index: 100;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+
+  color: white;
+    & input, & textarea {
+      padding: 0.7em;
+      margin-bottom: 0.5rem;
+      border-radius: 10px;
+      border: 0.5px solid #94e995;
+      box-sizing: border-box;
+      &:focus {
+        outline: 0;
+      }
+    }
+    & label{
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+    & button {
+      background: #A04F85;
+      cursor: pointer;
+      box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+      color: white;
+      margin-top: 15px;
+      transition: .5s;
+      transform: scale(1);
+      @extend %propiedad;
+        &:active{
+            transform: scale(.5);
+        }
+        &:hover{
+          background:#6DB2D7;
+        }
+      }
+    }
+    input:invalid, textarea:invalid {
+      background:white;
+    }
+    input:valid, textarea:valid {
+      opacity: .6;
+    }
+    /**Waves**/
+  .waves {
+    position: absolute;
+    bottom: -135px;
+    height: 527px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    width: 2402px;
+    height: 600px;
+    background: url(images/waves.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+  }
+  .wave.a {
+    background-position: 0 -854px;
+  }
+  .wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+  }
+  .wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+  }
+  @keyframes wave {
+    0% {
+      transform: translate(0 , 0);
+    }
+    50% {
+      transform: translate(-80px, 30px);
+    }
+    100% {
+      transform: translate(160px, -60px);
+    }
+  }
+  /**MediaQueries**/
+  @media screen and (max-width: 768px)
+  {
+    .Container{
+      background: linear-gradient(45deg, #A64A81 0%, #5BD9D6 50%);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      padding: 10px 5px;
+    }
+    .Container-image{
+      background: #945f924a;
+      padding: 5px 70px;
+      border-radius: 40% 0 / 20% 0;
+
+    }
+    .Mobile {
+      height: 40vmin;
+      margin-top: 5px;
+    }
+    .formulario{
+      width: 300px;
+      & input {
+        margin-bottom: 0.2em;
+      }
+    }
+  }
+  @media screen and (max-width: 320px){
+    .Container{
+      padding: 40px 15px;
+    }
+  }
