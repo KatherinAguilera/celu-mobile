@@ -58,6 +58,7 @@
       margin-top: 15px;
       transition: .5s;
       transform: scale(1);
+      height: 50px;
       @extend %propiedad;
         &:active{
             transform: scale(.5);
@@ -72,6 +73,10 @@
     }
     input:valid, textarea:valid {
       opacity: .6;
+    }
+
+    textarea{
+      margin-top: 1rem;
     }
     /**Waves**/
   .waves {
@@ -121,13 +126,13 @@
     }
     .Container{
       background: linear-gradient(45deg, #A64A81 0%, #5BD9D6 50%);
-      height: 100vh;
+      height: auto;
       width: 100%;
       display: flex;
       flex-direction: column;
       position: relative;
       overflow: hidden;
-      padding: 10px 5px;
+      padding: 12px 0;
     }
     .Container-image{
       background: #945f924a;
@@ -136,7 +141,7 @@
 
     }
     .Mobile {
-      height: 40vmin;
+      // height: 40vmin;
       margin-top: 5px;
     }
     .formulario{
@@ -152,7 +157,7 @@
       overflow-x:hidden;
     }
     .Container{
-      padding: 40px 15px;
+      padding: 20px 15px;
     }
     .Container-image {
       margin-top: 10px;
